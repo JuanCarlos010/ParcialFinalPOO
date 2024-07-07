@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 07, 2024 at 10:39 PM
+-- Generation Time: Jul 07, 2024 at 10:56 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `bcn`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tarjeta`
+--
+
+CREATE TABLE `tarjeta` (
+  `id_tarjeta` int(11) NOT NULL,
+  `num_tarjeta` int(200) NOT NULL,
+  `Fecha_expiracion` date NOT NULL,
+  `Tipo_tarjeta` varchar(200) NOT NULL,
+  `Faclitador` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=big5 COLLATE=big5_bin;
 
 -- --------------------------------------------------------
 
@@ -41,6 +55,12 @@ CREATE TABLE `usuario` (
 --
 
 --
+-- Indexes for table `tarjeta`
+--
+ALTER TABLE `tarjeta`
+  ADD PRIMARY KEY (`id_tarjeta`);
+
+--
 -- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
@@ -50,6 +70,12 @@ ALTER TABLE `usuario`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `tarjeta`
+--
+ALTER TABLE `tarjeta`
+  MODIFY `id_tarjeta` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `usuario`
