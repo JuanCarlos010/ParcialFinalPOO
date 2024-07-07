@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="578.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.banco.HelloController">
+    <children>
+        <Button layoutX="199.0" layoutY="361.0" mnemonicParsing="false" onAction="#limpiar" text="LIMPIAR"/>
+        <Button fx:id="btnConfirma" layoutX="284.0" layoutY="361.0" mnemonicParsing="false" onAction="#confirma"
+                text="CONFIRMAR"/>
+        <Label layoutX="81.0" layoutY="23.0" text="NOMBRE"/>
+        <Label layoutX="88.0" layoutY="192.0" text="CLAVE"/>
+        <Label layoutX="402.0" layoutY="192.0" text="REPETIR CLAVE"/>
+        <Label layoutX="75.0" layoutY="266.0" text="DIRECCION"/>
+        <Label layoutX="414.0" layoutY="266.0" text="TELEFONO"/>
+        <TextField fx:id="tfNombre" layoutX="21.0" layoutY="46.0" prefHeight="25.0" prefWidth="201.0"/>
+        <TextField fx:id="tfClave" layoutX="18.0" layoutY="211.0" prefHeight="25.0" prefWidth="201.0"/>
+        <TextField fx:id="tfClaveConfirma" layoutX="353.0" layoutY="211.0" prefHeight="25.0" prefWidth="201.0"/>
+        <TextField fx:id="tfDireccion" layoutX="20.0" layoutY="283.0" prefHeight="25.0" prefWidth="201.0"/>
+        <TextField fx:id="tfTelefono" layoutX="352.0" layoutY="283.0" prefHeight="25.0" prefWidth="200.0"/>
+        <Label layoutX="229.0" layoutY="14.0" text="REGISTRO" underline="true"/>
+        <Label fx:id="lblConfirmaClave" layoutX="218.0" layoutY="192.0" prefHeight="17.0" prefWidth="130.0"
+               text="*Las claves no coinciden" visible="false"/>
+        <Label fx:id="lblConfirma" layoutX="203.0" layoutY="335.0" prefHeight="17.0" prefWidth="159.0"
+               text="Todo listo para continuar!!" visible="false"/>
+        <Label fx:id="lblConfirmaTelefono" layoutX="365.0" layoutY="308.0" text="*Solamente ocho digitos numericos"
+               visible="false"/>
+        <Label layoutX="425.0" layoutY="23.0" text="APELLIDO"/>
+        <TextField fx:id="tfApellido" layoutX="356.0" layoutY="46.0" prefHeight="25.0" prefWidth="201.0"/>
+        <Label fx:id="lblConfirmaNombre" layoutX="51.0" layoutY="80.0" text="*El nombre solo puede contener letras"
+               visible="false"/>
+        <Label layoutX="200.0" layoutY="112.0" text="NOMBRE DE USUARIO"/>
+        <TextField fx:id="tfUsuario" layoutX="160.0" layoutY="140.0" prefHeight="25.0" prefWidth="200.0"/>
+        <Label fx:id="lblConfirmaApellido" layoutX="389.0" layoutY="80.0" text="*El apellido solo puede contener letras"
+               visible="false"/>
+        <Button fx:id="btnContinuar" layoutX="286.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0"
+                prefWidth="80.0" text="Continuar" visible="false" onAction="#continuar"/>
+    </children>
+</Pane>
