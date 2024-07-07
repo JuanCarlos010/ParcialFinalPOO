@@ -1,6 +1,7 @@
 package com.example.banco;
 
-import javafx.fxml.FXML;
+
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -174,5 +175,6 @@ public class HelloController {
         tfClaveConfirma.setText("");
         lblConfirma.setVisible(false);
         lblConfirmaClave.setVisible(false);
+
     }
 }
