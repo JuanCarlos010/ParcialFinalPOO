@@ -1,7 +1,7 @@
 package com.example.banco;
 
 public class Cliente {
-    private String nombre, apellido, usuario;
+    private String nombre, apellido;
     private String clave;
     private String direccion;
     private int telefono;
@@ -12,14 +12,6 @@ public class Cliente {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
     }
 
     public String getApellido() {
@@ -54,10 +46,9 @@ public class Cliente {
         this.telefono = telefono;
     }
 
-    public Cliente(String nombre, String apellido, String usuario, String direccion, String clave, int telefono) {
+    public Cliente(String nombre, String apellido,  String direccion, String clave, int telefono) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.usuario = usuario;
         this.direccion = direccion;
         this.clave = clave;
         this.telefono = telefono;
