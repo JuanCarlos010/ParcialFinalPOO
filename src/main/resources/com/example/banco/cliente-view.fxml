@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.banco.ClienteController">
+    <HBox spacing="10">
+        <TextField fx:id="nombreField" promptText="Nombre"/>
+        <TextField fx:id="direccionField" promptText="Dirección"/>
+        <TextField fx:id="telefonoField" promptText="Teléfono"/>
+        <Button text="Agregar" onAction="#handleAgregarCliente"/>
+    </HBox>
+    <TableView fx:id="clienteTable">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="nombreColumn" text="Nombre"/>
+            <TableColumn fx:id="direccionColumn" text="Dirección"/>
+            <TableColumn fx:id="telefonoColumn" text="Teléfono"/>
+        </columns>
+    </TableView>
+</VBox>

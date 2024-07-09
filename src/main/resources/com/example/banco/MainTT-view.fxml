@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="510.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco.TarjetaDAO">
+    <children>
+
+        <TextField fx:id="fechaField" layoutX="110.0" layoutY="23.0" />
+        <TextField fx:id="montoField" layoutX="110.0" layoutY="53.0" />
+        <TextField fx:id="descripcionField" layoutX="110.0" layoutY="83.0" />
+        <TextField fx:id="tarjetaNumeroField" layoutX="110.0" layoutY="113.0" />
+        <Button layoutX="33.0" layoutY="156.0" onAction="#agregarTransaccion" text="Agregar Transacción" />
+      <Label layoutX="45.0" layoutY="27.0" text="Fecha" />
+      <Label layoutX="43.0" layoutY="58.0" text="Monto" />
+      <Label layoutX="30.0" layoutY="87.0" text="Descripcion" />
+      <Label layoutX="23.0" layoutY="117.0" text="Tarjeta numero" />
+        <TableView fx:id="transaccionTable" layoutX="30.0" layoutY="202.0" prefHeight="274.0" prefWidth="378.0">
+            <columns>
+                <TableColumn text="Fecha" />
+                <TableColumn text="Monto" />
+                <TableColumn text="Descripción" />
+                <TableColumn prefWidth="137.0" text="Tarjeta Número" />
+            </columns>
+        </TableView>
+        <Button layoutX="282.0" layoutY="156.0" onAction="#cargarTransacciones" text="Cargar Transacciones" />
+    </children>
+</AnchorPane>
