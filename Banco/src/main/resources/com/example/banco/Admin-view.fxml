@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco.AdminController">
+   <children>
+      <Label fx:id="lblNombre" layoutX="39.0" layoutY="29.0" text="BIENVENIDO" />
+      <ListView layoutX="40.0" layoutY="100.0" prefHeight="268.0" prefWidth="513.0" />
+      <Label fx:id="lblusuario" layoutX="115.0" layoutY="29.0" text="[NOMBRE USUARIO]" />
+      <Label layoutX="224.0" layoutY="75.0" text="HISTORIAL" />
+      <Label fx:id="lblCliente" layoutX="300.0" layoutY="75.0" text="[NOMBRE CLIENTE]" />
+      <Button fx:id="btnSalir" layoutX="520.0" layoutY="25.0" mnemonicParsing="false" text="SALIR" />
+   </children>
+</Pane>

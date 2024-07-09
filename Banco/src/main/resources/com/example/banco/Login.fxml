@@ -5,13 +5,13 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco.mainController">
    <children>
-      <Label layoutX="107.0" layoutY="183.0" prefHeight="17.0" prefWidth="84.0" text="CONTRASEÑA" />
-      <Label layoutX="123.0" layoutY="136.0" prefHeight="17.0" prefWidth="50.0" text="NOMBRE" />
-      <TextField fx:id="tfNombre" layoutX="212.0" layoutY="132.0" />
-      <TextField fx:id="tfConstraseña" layoutX="212.0" layoutY="179.0" />
-      <Button fx:id="btnLogin" layoutX="189.0" layoutY="238.0" mnemonicParsing="false" onAction="#confirmarLogin" text="Iniciar sesion" />
-      <Button fx:id="btnRegistro" layoutX="286.0" layoutY="238.0" mnemonicParsing="false" onAction="#confirmaRegistro" text="Registrar" />
-      <Label fx:id="lblConfirma" layoutX="397.0" layoutY="157.0" />
-      <Button fx:id="btnContinuar" layoutX="197.0" layoutY="238.0" mnemonicParsing="false" onAction="#continuar" text="Continuar" visible="false" />
+      <Label layoutX="190.0" layoutY="189.0" prefHeight="17.0" prefWidth="84.0" text="CONTRASEÑA" />
+      <Label layoutX="206.0" layoutY="142.0" prefHeight="17.0" prefWidth="50.0" text="NOMBRE" />
+      <TextField fx:id="tfNombre" layoutX="295.0" layoutY="138.0" />
+      <TextField fx:id="tfConstraseña" layoutX="295.0" layoutY="185.0" />
+      <Button fx:id="btnLogin" layoutX="215.0" layoutY="301.0" mnemonicParsing="false" onAction="#confirmarLogin" text="Iniciar sesion" />
+      <Button fx:id="btnRegistro" layoutX="312.0" layoutY="301.0" mnemonicParsing="false" onAction="#confirmaRegistro" text="Registrar" />
+      <Label fx:id="lblConfirma" layoutX="254.0" layoutY="105.0" />
+      <Label layoutX="170.0" layoutY="26.0" text="BIENVENIDO AL BANCO CENTRAL DE NLOGONIA " underline="true" />
    </children>
 </Pane>
