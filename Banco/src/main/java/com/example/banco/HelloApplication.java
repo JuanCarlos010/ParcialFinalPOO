@@ -7,6 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
 public class HelloApplication extends Application { // 00056122 define la clase principal de la aplicacion
     @Override
     public void start(Stage stage) throws IOException { // 00056122 inicia la aplicacion JavaFX
@@ -19,5 +20,6 @@ public class HelloApplication extends Application { // 00056122 define la clase 
 
     public static void main(String[] args) { // 00056122 metodo principal que lanza la aplicacion
         launch(); // 00056122 lanza la aplicacion JavaFX
+
     }
 }
