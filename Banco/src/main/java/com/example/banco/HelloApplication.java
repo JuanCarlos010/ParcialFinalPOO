@@ -7,18 +7,19 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application { //00128023 Clase principal que extiende de application para una aplicación con JavaFX
 
+public class HelloApplication extends Application { // 00056122 define la clase principal de la aplicacion
     @Override
-    public void start(Stage stage) throws IOException { //00128023 Metodo que inicia la aplicación JavaFX
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("cliente-view.fxml")); // 00128023 Carga el archivo cliente-view.fxml usando FXMLLoader
-        Scene scene = new Scene(fxmlLoader.load(), 890, 500); //00128023 Crea una nueva escena con el contenido cargado desde el archivo FXML
-        stage.setTitle("Hello!"); //00128023 Establece el título de la ventana
-        stage.setScene(scene); //  00128023 Establece la escena en el escenario (stage)
-        stage.show(); // 00128023 Muestra la ventana
+    public void start(Stage stage) throws IOException { // 00056122 inicia la aplicacion JavaFX
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("cliente-view.fxml")); // 00056122 carga el archivo FXML
+        Scene scene = new Scene(fxmlLoader.load(), 890, 500); // 00056122 crea una nueva escena
+        stage.setTitle("Hello!"); // 00056122 establece el titulo de la ventana
+        stage.setScene(scene); // 00056122 asigna la escena a la ventana
+        stage.show(); // 00056122 muestra la ventana
     }
 
-    public static void main(String[] args) { //00128023 metodo principal que inicia la aplicación JavaFX
-        launch(); //00128023 Lanza la aplicación JavaFX
+    public static void main(String[] args) { // 00056122 metodo principal que lanza la aplicacion
+        launch(); // 00056122 lanza la aplicacion JavaFX
+
     }
 }
