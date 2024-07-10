@@ -5,6 +5,7 @@ module com.example.banco {
     requires javafx.graphics;
     requires javafx.swing;
     requires javafx.media;
+    requires java.sql;
 
     opens com.example.banco to javafx.fxml;
     exports com.example.banco;
