@@ -96,7 +96,7 @@ public class ClienteController {
             Date endDate = Date.valueOf(endDateField.getText());
 
             TransaccionDAO transaccionDAO = new TransaccionDAO();
-            List<Transaccion> transacciones = transaccionDAO.getTransaccionesByClienteIdAndDateRange(clienteId, startDate, endDate);
+            List<Transaccion> transacciones = transaccionDAO.obtenerTransaccionesPorIDClienteYRangoFecha(clienteId, startDate, endDate);
 
             ObservableList<Transaccion> transaccionList = FXCollections.observableArrayList(transacciones);
             transaccionTable.setItems(transaccionList);
@@ -118,7 +118,7 @@ public class ClienteController {
             int clienteId = Integer.parseInt(clienteIdField.getText());
 
             TransaccionDAO transaccionDAO = new TransaccionDAO();
-            List<Tarjeta> tarjetas = TarjetaDAO.getTarjetasByClienteId(clienteId);
+            List<Tarjeta> tarjetas = TarjetaDAO.obtenertarjetasporID(clienteId);
 
             StringBuilder sb = new StringBuilder();
             for (Tarjeta tarjeta : tarjetas) {
@@ -155,7 +155,7 @@ public class ClienteController {
 
             String facilitador = facilitadorField.getText();
             TransaccionDAO transaccionDAO = new TransaccionDAO();
-            List<ClienteReporte> reportes = transaccionDAO.getClientesPorFacilitador(facilitador);
+            List<ClienteReporte> reportes = transaccionDAO.obtenerClientesporFacilitador(facilitador);
 
             String reporteContenido = generarReporteContenido(reportes);
             guardarReporte(reporteContenido);
@@ -198,6 +198,10 @@ public class ClienteController {
         clienteIdField.clear();
         startDateField.clear();
         endDateField.clear();
+        facilitadorField.clear();
+        nombreField.clear();
+        telefonoField.clear();
+        direccionField.clear();
     }
     private void showAlert(String title, String message, AlertType alertType) {
         Alert alert = new Alert(alertType);
