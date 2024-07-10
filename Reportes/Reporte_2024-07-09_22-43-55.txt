@@ -1,0 +1,3 @@
+Reporte de Clientes por Facilitador de Tarjeta
+===========================================
+Cliente ID: 2, Nombre: urquilla, Compras: 1, Total Gastado: 50.0

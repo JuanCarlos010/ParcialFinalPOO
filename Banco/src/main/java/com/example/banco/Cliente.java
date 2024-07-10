@@ -1,56 +1,73 @@
 package com.example.banco;
 
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+
 public class Cliente {
-    private String nombre, apellido;
-    private String clave;
-    private String direccion;
-    private int telefono;
+    private final SimpleIntegerProperty id;
+    private final SimpleStringProperty nombre;
+    private final SimpleStringProperty direccion;
+    private final SimpleStringProperty telefono;
+
+    public Cliente() {
+        this.id = new SimpleIntegerProperty();
+        this.nombre = new SimpleStringProperty();
+        this.direccion = new SimpleStringProperty();
+        this.telefono = new SimpleStringProperty();
+    }
+
+    public Cliente(String nombre, String direccion, String telefono) {
+        this();
+        this.nombre.set(nombre);
+        this.direccion.set(direccion);
+        this.telefono.set(telefono);
+    }
+
+    public int getId() {
+        return id.get();
+    }
+
+    public SimpleIntegerProperty idProperty() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id.set(id);
+    }
 
     public String getNombre() {
+        return nombre.get();
+    }
+
+    public SimpleStringProperty nombreProperty() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public String getClave() {
-        return clave;
-    }
-
-    public void setClave(String clave) {
-        this.clave = clave;
+        this.nombre.set(nombre);
     }
 
     public String getDireccion() {
+        return direccion.get();
+    }
+
+    public SimpleStringProperty direccionProperty() {
         return direccion;
     }
 
     public void setDireccion(String direccion) {
-        this.direccion = direccion;
+        this.direccion.set(direccion);
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
+        return telefono.get();
+    }
+
+    public SimpleStringProperty telefonoProperty() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }
-
-    public Cliente(String nombre, String apellido,  String direccion, String clave, int telefono) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.direccion = direccion;
-        this.clave = clave;
-        this.telefono = telefono;
+    public void setTelefono(String telefono) {
+        this.telefono.set(telefono);
     }
 }
