@@ -1,0 +1,3 @@
+Reporte de Clientes por Facilitador de Tarjeta
+===========================================
+Cliente ID: 4, Nombre: Juan , Compras: 1, Total Gastado: 100.0
